@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luxor Balloon Hub</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="new-theme.css">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <!-- Header -->
   <header class="ts-header">
@@ -16,14 +20,15 @@
         <span class="ts-logo-top">balloon</span>
         <span class="ts-logo-bottom">luxor</span>
       </div>
-      
+
       <nav class="ts-nav">
         <a href="#">Flight Zones</a>
         <a href="#">My Booking</a>
       </nav>
-      
+
       <div class="ts-header-actions">
-        <button id="menu-trigger" class="ts-menu-trigger" aria-label="Open Menu" onclick="document.getElementById('ts-sidebar-backdrop').classList.add('open'); document.getElementById('ts-sidebar').classList.add('open');">
+        <button id="menu-trigger" class="ts-menu-trigger" aria-label="Open Menu"
+          onclick="document.getElementById('ts-sidebar-backdrop').classList.add('open'); document.getElementById('ts-sidebar').classList.add('open');">
           ☰
         </button>
       </div>
@@ -35,29 +40,38 @@
     <section class="ts-hero">
       <div class="ts-hero-bg" style="background-image: url('hero.png');"></div>
       <div class="ts-container ts-hero-content">
-        <h1 class="ts-hero-title">اكتشف سحر الأقصر من السماء</h1>
       </div>
-      
+
       <!-- Search Pill -->
       <div class="ts-search-wrapper">
         <div class="ts-container">
-          <div class="ts-search-pill">
+          <form class="ts-search-pill" action="programs.html" method="GET">
             <div class="ts-search-item">
-              <span class="ts-search-label">الوجهة والنشاط</span>
-              <strong class="ts-search-val">الأقصر، البر الغربي</strong>
+              <label for="dest" class="ts-search-label">الوجهة والنشاط</label>
+              <select name="dest" id="dest" class="ts-search-input">
+                <option value="west">الأقصر، البر الغربي</option>
+                <option value="east">الأقصر، البر الشرقي</option>
+                <option value="all">جميع الوجهات</option>
+              </select>
             </div>
             <div class="ts-search-divider"></div>
             <div class="ts-search-item">
-              <span class="ts-search-label">تاريخ الرحلة</span>
-              <strong class="ts-search-val">اختر التاريخ المناسب</strong>
+              <label for="date" class="ts-search-label">تاريخ الرحلة</label>
+              <input type="date" name="date" id="date" class="ts-search-input" required />
             </div>
             <div class="ts-search-divider"></div>
             <div class="ts-search-item">
-              <span class="ts-search-label">الضيوف</span>
-              <strong class="ts-search-val">2 بالغين، 0 أطفال</strong>
+              <label for="guests" class="ts-search-label">الضيوف</label>
+              <select name="guests" id="guests" class="ts-search-input">
+                <option value="1">1 بالغ</option>
+                <option value="2" selected>2 بالغين</option>
+                <option value="3">3 أشخاص</option>
+                <option value="4">4 أشخاص</option>
+                <option value="5">مجموعة (+5)</option>
+              </select>
             </div>
-            <button class="ts-search-btn">بحث</button>
-          </div>
+            <button type="submit" class="ts-search-btn">بحث</button>
+          </form>
         </div>
       </div>
     </section>
@@ -86,14 +100,15 @@
                 <li>انتقالات مجانية</li>
                 <li>شهادة طيران</li>
               </ul>
-              <p class="ts-card-desc">استمتع بمشاهدة معابد الأقصر ووادي الملوك مع شروق الشمس في تجربة بانورامية لا تُنسى بصحبة نخبة من أمهر الطيارين.</p>
+              <p class="ts-card-desc">استمتع بمشاهدة معابد الأقصر ووادي الملوك مع شروق الشمس في تجربة بانورامية لا تُنسى
+                بصحبة نخبة من أمهر الطيارين.</p>
               <div class="ts-card-footer">
                 <div class="ts-price">يبدأ من <br><strong>$45</strong></div>
                 <a href="#" class="ts-btn-outline">التفاصيل</a>
               </div>
             </div>
           </article>
-          
+
           <!-- Ticket Card 2 -->
           <article class="ts-card">
             <div class="ts-card-img" style="background-image: url('hero.png');">
@@ -110,7 +125,8 @@
                 <li>إفطار خفيف</li>
                 <li>تأمين شامل</li>
               </ul>
-              <p class="ts-card-desc">خيار مثالي للعائلات والمجموعات. احصل على خصم خاص عند حجز أكثر من 4 مقاعد واستمتع برحلة هادئة وآمنة.</p>
+              <p class="ts-card-desc">خيار مثالي للعائلات والمجموعات. احصل على خصم خاص عند حجز أكثر من 4 مقاعد واستمتع
+                برحلة هادئة وآمنة.</p>
               <div class="ts-card-footer">
                 <div class="ts-price">يبدأ من <br><strong>$40</strong></div>
                 <a href="#" class="ts-btn-outline">التفاصيل</a>
@@ -134,7 +150,8 @@
                 <li>انتقالات VIP</li>
                 <li>إفطار فاخر</li>
               </ul>
-              <p class="ts-card-desc">الرحلة الأفضل للمناسبات الخاصة والاحتفالات الرومانسية. خصوصية تامة مع كابتن خاص وخدمة فندقية من البداية للنهاية.</p>
+              <p class="ts-card-desc">الرحلة الأفضل للمناسبات الخاصة والاحتفالات الرومانسية. خصوصية تامة مع كابتن خاص
+                وخدمة فندقية من البداية للنهاية.</p>
               <div class="ts-card-footer">
                 <div class="ts-price">يبدأ من <br><strong>$250</strong></div>
                 <a href="#" class="ts-btn-outline">التفاصيل</a>
@@ -171,7 +188,7 @@
               </div>
             </div>
           </article>
-          
+
           <!-- Recommended Card 2 -->
           <article class="ts-card">
             <div class="ts-card-img ts-card-img-small" style="background-image: url('hero.png');">
@@ -342,7 +359,8 @@
       <div class="ts-container ts-about-wrapper">
         <div class="ts-about-content">
           <h2 class="ts-section-title">أكثر من 20 عاماً من الخبرة في سماء الأقصر</h2>
-          <p class="ts-about-desc">نحن نقدم أفضل تجربة طيران بالمنطاد في الأقصر مع أمهر الطيارين وأعلى معايير السلامة والأمان. رحلاتنا تمنحك منظراً بانورامياً لا مثيل له لمعالم الأقصر الخالدة وقت شروق الشمس.</p>
+          <p class="ts-about-desc">نحن نقدم أفضل تجربة طيران بالمنطاد في الأقصر مع أمهر الطيارين وأعلى معايير السلامة
+            والأمان. رحلاتنا تمنحك منظراً بانورامياً لا مثيل له لمعالم الأقصر الخالدة وقت شروق الشمس.</p>
           <ul class="ts-about-list">
             <li>طيارون معتمدون دولياً</li>
             <li>صيانة دورية بأعلى المعايير</li>
@@ -398,18 +416,22 @@
         <div class="ts-section-header">
           <h2 class="ts-section-title">كل ما تحتاج لمعرفته عن رحلة المنطاد في الأقصر</h2>
         </div>
-        
+
         <div class="ts-grid-2" style="margin-bottom: 60px;">
           <!-- Article Cards -->
           <div class="ts-info-card">
-            <div class="ts-card-img" style="background-image: url('hero.png'); border-radius: 16px; margin-bottom: 24px;"></div>
+            <div class="ts-card-img"
+              style="background-image: url('hero.png'); border-radius: 16px; margin-bottom: 24px;"></div>
             <h3 class="ts-info-card-title">دليلك لرحلة المنطاد: ماذا ترتدي؟</h3>
-            <p>يُنصح دائماً بارتداء ملابس مريحة وعملية، مع الأخذ في الاعتبار أن الجو قد يكون بارداً في الصباح الباكر خاصة في فصل الشتاء. الأحذية الرياضية هي الخيار الأمثل...</p>
+            <p>يُنصح دائماً بارتداء ملابس مريحة وعملية، مع الأخذ في الاعتبار أن الجو قد يكون بارداً في الصباح الباكر
+              خاصة في فصل الشتاء. الأحذية الرياضية هي الخيار الأمثل...</p>
           </div>
           <div class="ts-info-card">
-            <div class="ts-card-img" style="background-image: url('hero.png'); border-radius: 16px; margin-bottom: 24px;"></div>
+            <div class="ts-card-img"
+              style="background-image: url('hero.png'); border-radius: 16px; margin-bottom: 24px;"></div>
             <h3 class="ts-info-card-title">أفضل وقت للطيران في الأقصر</h3>
-            <p>يعتبر وقت شروق الشمس هو الوقت المثالي والأكثر استقراراً للطيران بالمنطاد. حيث تكون الرياح هادئة والأجواء مناسبة جداً لالتقاط أروع الصور التذكارية...</p>
+            <p>يعتبر وقت شروق الشمس هو الوقت المثالي والأكثر استقراراً للطيران بالمنطاد. حيث تكون الرياح هادئة والأجواء
+              مناسبة جداً لالتقاط أروع الصور التذكارية...</p>
           </div>
         </div>
 
@@ -424,25 +446,30 @@
             </details>
             <details class="ts-faq-item">
               <summary>هل الطيران آمن للأطفال؟</summary>
-              <p>نعم، ولكن يُشترط أن يكون عمر الطفل فوق 6 سنوات وأطول من 120 سم ليتمكن من رؤية المشهد من فوق حافة السلة.</p>
+              <p>نعم، ولكن يُشترط أن يكون عمر الطفل فوق 6 سنوات وأطول من 120 سم ليتمكن من رؤية المشهد من فوق حافة السلة.
+              </p>
             </details>
             <details class="ts-faq-item">
               <summary>ماذا يحدث إذا تم إلغاء الرحلة بسبب الطقس؟</summary>
-              <p>في حالة إلغاء الرحلة لظروف الطقس أو تعليمات الطيران المدني، يتم استرداد المبلغ بالكامل أو تأجيل الرحلة ليوم آخر حسب رغبتك.</p>
+              <p>في حالة إلغاء الرحلة لظروف الطقس أو تعليمات الطيران المدني، يتم استرداد المبلغ بالكامل أو تأجيل الرحلة
+                ليوم آخر حسب رغبتك.</p>
             </details>
           </div>
           <div class="ts-faq-col">
             <details class="ts-faq-item">
               <summary>هل يوجد وزن محدد للركاب؟</summary>
-              <p>نعم، نرجو إبلاغنا مسبقاً إذا كان وزن الراكب يتجاوز 100 كيلوجرام لترتيب توزيع الأوزان داخل السلة بأمان.</p>
+              <p>نعم، نرجو إبلاغنا مسبقاً إذا كان وزن الراكب يتجاوز 100 كيلوجرام لترتيب توزيع الأوزان داخل السلة بأمان.
+              </p>
             </details>
             <details class="ts-faq-item">
               <summary>كم تستغرق الرحلة بالكامل؟</summary>
-              <p>الرحلة في الجو تستغرق من 45 إلى 60 دقيقة، ولكن التجربة كاملة منذ الخروج من الفندق وحتى العودة تستغرق حوالي 3 ساعات.</p>
+              <p>الرحلة في الجو تستغرق من 45 إلى 60 دقيقة، ولكن التجربة كاملة منذ الخروج من الفندق وحتى العودة تستغرق
+                حوالي 3 ساعات.</p>
             </details>
             <details class="ts-faq-item">
               <summary>هل مسموح بالتصوير؟</summary>
-              <p>بالتأكيد! ننصح بإحضار كاميراتكم وهواتفكم لالتقاط أروع الصور، ولكن يمنع استخدام طائرات الدرون بدون تصريح أمني.</p>
+              <p>بالتأكيد! ننصح بإحضار كاميراتكم وهواتفكم لالتقاط أروع الصور، ولكن يمنع استخدام طائرات الدرون بدون تصريح
+                أمني.</p>
             </details>
           </div>
         </div>
@@ -461,7 +488,8 @@
             <span class="ts-logo-top">balloon</span>
             <span class="ts-logo-bottom">luxor</span>
           </div>
-          <p>أكبر منصة لحجز رحلات المنطاد في الأقصر. استكشف تاريخ الفراعنة من الجو واستمتع بتجربة طيران آمنة وذكريات لا تُنسى.</p>
+          <p>أكبر منصة لحجز رحلات المنطاد في الأقصر. استكشف تاريخ الفراعنة من الجو واستمتع بتجربة طيران آمنة وذكريات لا
+            تُنسى.</p>
         </div>
         <div>
           <h4>روابط هامة</h4>
@@ -496,10 +524,13 @@
     </div>
   </footer>
   <!-- Sidebar -->
-  <div id="ts-sidebar-backdrop" class="ts-sidebar-backdrop" onclick="document.getElementById('ts-sidebar-backdrop').classList.remove('open'); document.getElementById('ts-sidebar').classList.remove('open');"></div>
+  <div id="ts-sidebar-backdrop" class="ts-sidebar-backdrop"
+    onclick="document.getElementById('ts-sidebar-backdrop').classList.remove('open'); document.getElementById('ts-sidebar').classList.remove('open');">
+  </div>
   <aside id="ts-sidebar" class="ts-sidebar">
     <div class="ts-sidebar-header">
-      <button class="ts-sidebar-close" onclick="document.getElementById('ts-sidebar-backdrop').classList.remove('open'); document.getElementById('ts-sidebar').classList.remove('open');">✕</button>
+      <button class="ts-sidebar-close"
+        onclick="document.getElementById('ts-sidebar-backdrop').classList.remove('open'); document.getElementById('ts-sidebar').classList.remove('open');">✕</button>
     </div>
     <div class="ts-sidebar-content">
       <div class="ts-sidebar-booking">
@@ -544,4 +575,5 @@
     </div>
   </aside>
 </body>
+
 </html>
