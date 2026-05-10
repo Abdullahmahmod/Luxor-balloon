@@ -6,10 +6,12 @@
 
 /* Header */
 .ts-header {
-  background: #fff;
-  border-bottom: 1px solid #f1f5f9;
-  position: sticky;
+  background: transparent;
+  border-bottom: none;
+  position: absolute;
+  width: 100%;
   top: 0;
+  left: 0;
   z-index: 100;
 }
 .ts-header-inner {
