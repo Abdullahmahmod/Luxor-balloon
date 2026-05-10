@@ -14,22 +14,33 @@
 
 <body>
   <!-- Header -->
-  <header class="ts-header">
+  <header class="ts-header" dir="ltr">
     <div class="ts-container ts-header-inner">
       <div class="ts-logo">
         <span class="ts-logo-top">balloon</span>
         <span class="ts-logo-bottom">luxor</span>
       </div>
 
-      <nav class="ts-nav">
-        <a href="#">Flight Zones</a>
-        <a href="#">My Booking</a>
-      </nav>
-
       <div class="ts-header-actions">
-        <button id="menu-trigger" class="ts-menu-trigger" aria-label="Open Menu"
+        <a href="#" class="ts-header-link">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span style="color: #ccc;">|</span> USD
+        </a>
+        <a href="#" class="ts-header-link">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          FLIGHT ZONES
+        </a>
+        <a href="#" class="ts-header-link">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></svg>
+          MY BOOKING
+        </a>
+        <button id="menu-trigger" class="ts-menu-trigger" aria-label="Open Menu" style="margin-left: 8px;"
           onclick="document.getElementById('ts-sidebar-backdrop').classList.add('open'); document.getElementById('ts-sidebar').classList.add('open');">
-          ☰
+          <svg width="28" height="28" fill="none" stroke="var(--navy)" stroke-width="2.5" stroke-linecap="round" viewBox="0 0 24 24">
+            <line x1="4" y1="8" x2="20" y2="8"></line>
+            <line x1="4" y1="16" x2="20" y2="16"></line>
+            <line x1="4" y1="12" x2="14" y2="12"></line>
+          </svg>
         </button>
       </div>
     </div>

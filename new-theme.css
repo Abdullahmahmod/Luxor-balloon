@@ -6,9 +6,9 @@
 
 /* Header */
 .ts-header {
-  background: transparent;
+  background: #ffffff;
   border-bottom: none;
-  position: absolute;
+  position: relative; /* or sticky */
   width: 100%;
   top: 0;
   left: 0;
@@ -35,18 +35,24 @@
   display: flex;
   gap: 32px;
 }
-.ts-nav a {
+.ts-header-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: var(--navy);
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
   transition: color 0.2s;
+  text-decoration: none;
 }
-.ts-nav a:hover { color: var(--primary); }
-
+.ts-header-link:hover {
+  color: var(--primary);
+}
 .ts-header-actions {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 32px;
 }
 .ts-header-action-icon {
   width: 40px; height: 40px;
@@ -73,11 +79,22 @@
   background-position: center;
   z-index: 1;
 }
+.ts-hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(to bottom, #ffffff 0%, rgba(255,255,255,0.7) 25%, rgba(255,255,255,0) 100%);
+  z-index: 2;
+}
 .ts-hero-bg::after {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.05) 100%);
+  z-index: 3;
 }
 .ts-hero-content {
   position: relative;
