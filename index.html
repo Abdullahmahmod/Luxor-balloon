@@ -43,34 +43,59 @@
       </div>
 
       <!-- Search Pill -->
-      <div class="ts-search-wrapper">
-        <div class="ts-container">
+      <div class="ts-search-wrapper" dir="ltr">
+        <div class="ts-search-outer">
           <form class="ts-search-pill" action="programs.html" method="GET">
-            <div class="ts-search-item">
-              <label for="dest" class="ts-search-label">الوجهة والنشاط</label>
-              <select name="dest" id="dest" class="ts-search-input">
-                <option value="west">الأقصر، البر الغربي</option>
-                <option value="east">الأقصر، البر الشرقي</option>
-                <option value="all">جميع الوجهات</option>
-              </select>
+            
+            <div class="ts-search-group">
+              <span class="ts-search-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path><path d="M2 12H22"></path><path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z"></path></svg>
+              </span>
+              <div class="ts-search-item">
+                <label for="dest" class="ts-search-label">FLIGHT ZONE</label>
+                <select name="dest" id="dest" class="ts-search-input">
+                  <option value="" disabled selected hidden>Select Zone</option>
+                  <option value="west">West Bank</option>
+                  <option value="east">East Bank</option>
+                </select>
+              </div>
             </div>
+
             <div class="ts-search-divider"></div>
-            <div class="ts-search-item">
-              <label for="date" class="ts-search-label">تاريخ الرحلة</label>
-              <input type="date" name="date" id="date" class="ts-search-input" required />
+
+            <div class="ts-search-group">
+              <span class="ts-search-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </span>
+              <div class="ts-search-item">
+                <label for="guests" class="ts-search-label">PASSENGERS</label>
+                <select name="guests" id="guests" class="ts-search-input">
+                  <option value="" disabled selected hidden>Add Passengers</option>
+                  <option value="1">1 Passenger</option>
+                  <option value="2">2 Passengers</option>
+                  <option value="3">3 Passengers</option>
+                  <option value="4">4 Passengers</option>
+                </select>
+              </div>
             </div>
+
             <div class="ts-search-divider"></div>
-            <div class="ts-search-item">
-              <label for="guests" class="ts-search-label">الضيوف</label>
-              <select name="guests" id="guests" class="ts-search-input">
-                <option value="1">1 بالغ</option>
-                <option value="2" selected>2 بالغين</option>
-                <option value="3">3 أشخاص</option>
-                <option value="4">4 أشخاص</option>
-                <option value="5">مجموعة (+5)</option>
-              </select>
+
+            <div class="ts-search-group">
+              <span class="ts-search-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              </span>
+              <div class="ts-search-item">
+                <label for="date" class="ts-search-label">FLIGHT DATE</label>
+                <input type="text" placeholder="Select Date" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" name="date" id="date" class="ts-search-input" required />
+              </div>
             </div>
-            <button type="submit" class="ts-search-btn">بحث</button>
+
+            <button type="submit" class="ts-search-btn">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-right: 8px;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              SEARCH
+            </button>
+            
           </form>
         </div>
       </div>
