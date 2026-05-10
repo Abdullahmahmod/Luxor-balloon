@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxor Balloon Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="new-theme.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="ts-header">
+    <div class="ts-container ts-header-inner">
+      <div class="ts-logo">
+        <span class="ts-logo-top">balloon</span>
+        <span class="ts-logo-bottom">luxor</span>
+      </div>
+      
+      <nav class="ts-nav">
+        <a href="#">Flight Zones</a>
+        <a href="#">My Booking</a>
+      </nav>
+      
+      <div class="ts-header-actions">
+        <button id="menu-trigger" class="ts-menu-trigger" aria-label="Open Menu" onclick="document.getElementById('ts-sidebar-backdrop').classList.add('open'); document.getElementById('ts-sidebar').classList.add('open');">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="ts-hero">
+      <div class="ts-hero-bg" style="background-image: url('hero.png');"></div>
+      <div class="ts-container ts-hero-content">
+        <h1 class="ts-hero-title">اكتشف سحر الأقصر من السماء</h1>
+      </div>
+      
+      <!-- Search Pill -->
+      <div class="ts-search-wrapper">
+        <div class="ts-container">
+          <div class="ts-search-pill">
+            <div class="ts-search-item">
+              <span class="ts-search-label">الوجهة والنشاط</span>
+              <strong class="ts-search-val">الأقصر، البر الغربي</strong>
+            </div>
+            <div class="ts-search-divider"></div>
+            <div class="ts-search-item">
+              <span class="ts-search-label">تاريخ الرحلة</span>
+              <strong class="ts-search-val">اختر التاريخ المناسب</strong>
+            </div>
+            <div class="ts-search-divider"></div>
+            <div class="ts-search-item">
+              <span class="ts-search-label">الضيوف</span>
+              <strong class="ts-search-val">2 بالغين، 0 أطفال</strong>
+            </div>
+            <button class="ts-search-btn">بحث</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Tickets -->
+    <section class="ts-section" style="padding-top: 100px;">
+      <div class="ts-container">
+        <div class="ts-section-header">
+          <h2 class="ts-section-title">أفضل التذاكر في الأقصر</h2>
+          <a href="#" class="ts-btn-outline">عرض جميع التذاكر</a>
+        </div>
+        <div class="ts-grid-3">
+          <!-- Ticket Card 1 -->
+          <article class="ts-card">
+            <div class="ts-card-img" style="background-image: url('hero.png');">
+              <span class="ts-badge hot">HOT</span>
+            </div>
+            <div class="ts-card-body">
+              <div class="ts-card-meta">
+                <span class="ts-stars">⭐⭐⭐⭐⭐ 5.0</span>
+                <span class="ts-reviews">(120 تقييم)</span>
+              </div>
+              <h3 class="ts-card-title">رحلة الفجر الكلاسيكية</h3>
+              <ul class="ts-card-features">
+                <li>45-60 دقيقة</li>
+                <li>انتقالات مجانية</li>
+                <li>شهادة طيران</li>
+              </ul>
+              <p class="ts-card-desc">استمتع بمشاهدة معابد الأقصر ووادي الملوك مع شروق الشمس في تجربة بانورامية لا تُنسى بصحبة نخبة من أمهر الطيارين.</p>
+              <div class="ts-card-footer">
+                <div class="ts-price">يبدأ من <br><strong>$45</strong></div>
+                <a href="#" class="ts-btn-outline">التفاصيل</a>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Ticket Card 2 -->
+          <article class="ts-card">
+            <div class="ts-card-img" style="background-image: url('hero.png');">
+              <span class="ts-badge">أفضل قيمة</span>
+            </div>
+            <div class="ts-card-body">
+              <div class="ts-card-meta">
+                <span class="ts-stars">⭐⭐⭐⭐⭐ 4.9</span>
+                <span class="ts-reviews">(85 تقييم)</span>
+              </div>
+              <h3 class="ts-card-title">رحلة المنطاد العائلية</h3>
+              <ul class="ts-card-features">
+                <li>سلة متوسطة</li>
+                <li>إفطار خفيف</li>
+                <li>تأمين شامل</li>
+              </ul>
+              <p class="ts-card-desc">خيار مثالي للعائلات والمجموعات. احصل على خصم خاص عند حجز أكثر من 4 مقاعد واستمتع برحلة هادئة وآمنة.</p>
+              <div class="ts-card-footer">
+                <div class="ts-price">يبدأ من <br><strong>$40</strong></div>
+                <a href="#" class="ts-btn-outline">التفاصيل</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Ticket Card 3 -->
+          <article class="ts-card">
+            <div class="ts-card-img" style="background-image: url('hero.png');">
+              <span class="ts-badge">VIP</span>
+            </div>
+            <div class="ts-card-body">
+              <div class="ts-card-meta">
+                <span class="ts-stars">⭐⭐⭐⭐⭐ 5.0</span>
+                <span class="ts-reviews">(42 تقييم)</span>
+              </div>
+              <h3 class="ts-card-title">رحلة خاصة (Private)</h3>
+              <ul class="ts-card-features">
+                <li>سلة خاصة</li>
+                <li>انتقالات VIP</li>
+                <li>إفطار فاخر</li>
+              </ul>
+              <p class="ts-card-desc">الرحلة الأفضل للمناسبات الخاصة والاحتفالات الرومانسية. خصوصية تامة مع كابتن خاص وخدمة فندقية من البداية للنهاية.</p>
+              <div class="ts-card-footer">
+                <div class="ts-price">يبدأ من <br><strong>$250</strong></div>
+                <a href="#" class="ts-btn-outline">التفاصيل</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Recommended -->
+    <section class="ts-section">
+      <div class="ts-container">
+        <div class="ts-section-header">
+          <h2 class="ts-section-title">أفضل الرحلات الموصى بها في الأقصر</h2>
+        </div>
+        <div class="ts-grid-4">
+          <!-- Recommended Card 1 -->
+          <article class="ts-card">
+            <div class="ts-card-img ts-card-img-small" style="background-image: url('hero.png');">
+              <span class="ts-badge hot">خصم 10%</span>
+            </div>
+            <div class="ts-card-body">
+              <div class="ts-card-meta">
+                <span class="ts-stars">⭐⭐⭐⭐⭐ 4.9</span>
+              </div>
+              <h3 class="ts-card-title">منطاد الأقصر السحري</h3>
+              <ul class="ts-card-features">
+                <li>البر الغربي</li>
+                <li>45 دقيقة</li>
+              </ul>
+              <div class="ts-card-footer">
+                <div class="ts-price"><strong>$42</strong></div>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Recommended Card 2 -->
+          <article class="ts-card">
+            <div class="ts-card-img ts-card-img-small" style="background-image: url('hero.png');">
+            </div>
+            <div class="ts-card-body">
+              <div class="ts-card-meta">
+                <span class="ts-stars">⭐⭐⭐⭐⭐ 5.0</span>
+              </div>
+              <h3 class="ts-card-title">سماء حتشبسوت</h3>
+              <ul class="ts-card-features">
+                <li>الدير البحري</li>
+                <li>60 دقيقة</li>
+              </ul>
+              <div class="ts-card-footer">
+                <div class="ts-price"><strong>$48</strong></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Recommended Card 3 -->
+          <article class="ts-card">
+            <div class="ts-card-img ts-card-img-small" style="background-image: url('hero.png');">
+              <span class="ts-badge">NEW</span>
+            </div>
+            <div class="ts-card-body">
+              <div class="ts-card-meta">
+                <span class="ts-stars">⭐⭐⭐⭐ 4.7</span>
+              </div>
+              <h3 class="ts-card-title">طريق الكباش من أعلى</h3>
+              <ul class="ts-card-features">
+                <li>طريق الكباش</li>
+                <li>بانوراما</li>
+              </ul>
+              <div class="ts-card-footer">
+                <div class="ts-price"><strong>$40</strong></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Recommended Card 4 -->
+          <article class="ts-card">
+            <div class="ts-card-img ts-card-img-small" style="background-image: url('hero.png');">
+            </div>
+            <div class="ts-card-body">
+              <div class="ts-card-meta">
+                <span class="ts-stars">⭐⭐⭐⭐⭐ 4.8</span>
+              </div>
+              <h3 class="ts-card-title">الرحلة الملكية</h3>
+              <ul class="ts-card-features">
+                <li>وادي الملوك</li>
+                <li>خدمة مميزة</li>
+              </ul>
+              <div class="ts-card-footer">
+                <div class="ts-price"><strong>$55</strong></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Row 2 -->
+          <article class="ts-card">
+            <div class="ts-card-img ts-card-img-small" style="background-image: url('hero.png');">
+            </div>
+            <div class="ts-card-body">
+              <div class="ts-card-meta">
+                <span class="ts-stars">⭐⭐⭐⭐⭐ 5.0</span>
+              </div>
+              <h3 class="ts-card-title">رحلة شروق الشمس</h3>
+              <ul class="ts-card-features">
+                <li>البر الشرقي</li>
+                <li>صباحاً</li>
+              </ul>
+              <div class="ts-card-footer">
+                <div class="ts-price"><strong>$45</strong></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="ts-card">
+            <div class="ts-card-img ts-card-img-small" style="background-image: url('hero.png');">
+              <span class="ts-badge hot">محدود</span>
+            </div>
+            <div class="ts-card-body">
+              <div class="ts-card-meta">
+                <span class="ts-stars">⭐⭐⭐⭐ 4.6</span>
+              </div>
+              <h3 class="ts-card-title">منطاد الأصدقاء</h3>
+              <ul class="ts-card-features">
+                <li>حتى 8 أفراد</li>
+                <li>تصوير</li>
+              </ul>
+              <div class="ts-card-footer">
+                <div class="ts-price"><strong>$200</strong></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="ts-card">
+            <div class="ts-card-img ts-card-img-small" style="background-image: url('hero.png');">
+            </div>
+            <div class="ts-card-body">
+              <div class="ts-card-meta">
+                <span class="ts-stars">⭐⭐⭐⭐⭐ 4.9</span>
+              </div>
+              <h3 class="ts-card-title">رحلة الفراعنة</h3>
+              <ul class="ts-card-features">
+                <li>جولة شاملة</li>
+                <li>معبد الكرنك</li>
+              </ul>
+              <div class="ts-card-footer">
+                <div class="ts-price"><strong>$50</strong></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="ts-card">
+            <div class="ts-card-img ts-card-img-small" style="background-image: url('hero.png');">
+            </div>
+            <div class="ts-card-body">
+              <div class="ts-card-meta">
+                <span class="ts-stars">⭐⭐⭐⭐ 4.5</span>
+              </div>
+              <h3 class="ts-card-title">الرحلة الذهبية</h3>
+              <ul class="ts-card-features">
+                <li>سلة كبيرة</li>
+                <li>تأمين</li>
+              </ul>
+              <div class="ts-card-footer">
+                <div class="ts-price"><strong>$38</strong></div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+          <button class="ts-btn-outline">عرض المزيد من الرحلات</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories / Views -->
+    <section class="ts-section">
+      <div class="ts-container">
+        <div class="ts-section-header">
+          <h2 class="ts-section-title">أشهر الوجهات والمشاهد في الأقصر</h2>
+        </div>
+        <div class="ts-grid-4">
+          <div class="ts-view-card">
+            <div class="ts-view-img" style="background-image: url('hero.png');"></div>
+            <h4 class="ts-view-title">البر الغربي</h4>
+          </div>
+          <div class="ts-view-card">
+            <div class="ts-view-img" style="background-image: url('hero.png');"></div>
+            <h4 class="ts-view-title">وادي الملوك والملكات</h4>
+          </div>
+          <div class="ts-view-card">
+            <div class="ts-view-img" style="background-image: url('hero.png');"></div>
+            <h4 class="ts-view-title">معبد حتشبسوت</h4>
+          </div>
+          <div class="ts-view-card">
+            <div class="ts-view-img" style="background-image: url('hero.png');"></div>
+            <h4 class="ts-view-title">معابد الكرنك</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Collage -->
+    <section class="ts-section">
+      <div class="ts-container ts-about-wrapper">
+        <div class="ts-about-content">
+          <h2 class="ts-section-title">أكثر من 20 عاماً من الخبرة في سماء الأقصر</h2>
+          <p class="ts-about-desc">نحن نقدم أفضل تجربة طيران بالمنطاد في الأقصر مع أمهر الطيارين وأعلى معايير السلامة والأمان. رحلاتنا تمنحك منظراً بانورامياً لا مثيل له لمعالم الأقصر الخالدة وقت شروق الشمس.</p>
+          <ul class="ts-about-list">
+            <li>طيارون معتمدون دولياً</li>
+            <li>صيانة دورية بأعلى المعايير</li>
+            <li>انتقالات مجانية من وإلى الفندق</li>
+            <li>شهادات طيران لجميع الركاب</li>
+          </ul>
+          <a href="#" class="ts-btn-primary">تعرف علينا أكثر</a>
+        </div>
+        <div class="ts-collage">
+          <div class="ts-collage-img" style="background-image: url('hero.png');"></div>
+          <div class="ts-collage-img" style="background-image: url('hero.png');"></div>
+          <div class="ts-collage-img" style="background-image: url('hero.png');"></div>
+          <div class="ts-collage-img" style="background-image: url('hero.png');"></div>
+          <div class="ts-collage-img" style="background-image: url('hero.png');"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pilots -->
+    <section class="ts-section">
+      <div class="ts-container">
+        <div class="ts-section-header">
+          <h2 class="ts-section-title">طيارونا المحترفون</h2>
+        </div>
+        <div class="ts-grid-4">
+          <div class="ts-pilot-card">
+            <div class="ts-pilot-img" style="background-image: url('hero.png');"></div>
+            <h4 class="ts-pilot-name">كابتن محمود</h4>
+            <span class="ts-pilot-role">كبير الطيارين</span>
+          </div>
+          <div class="ts-pilot-card">
+            <div class="ts-pilot-img" style="background-image: url('hero.png');"></div>
+            <h4 class="ts-pilot-name">كابتن أحمد</h4>
+            <span class="ts-pilot-role">طيار معتمد</span>
+          </div>
+          <div class="ts-pilot-card">
+            <div class="ts-pilot-img" style="background-image: url('hero.png');"></div>
+            <h4 class="ts-pilot-name">كابتن طارق</h4>
+            <span class="ts-pilot-role">طيار معتمد</span>
+          </div>
+          <div class="ts-pilot-card">
+            <div class="ts-pilot-img" style="background-image: url('hero.png');"></div>
+            <h4 class="ts-pilot-name">كابتن عمرو</h4>
+            <span class="ts-pilot-role">طيار معتمد</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section (Articles/FAQ) -->
+    <section class="ts-info-section">
+      <div class="ts-container">
+        <div class="ts-section-header">
+          <h2 class="ts-section-title">كل ما تحتاج لمعرفته عن رحلة المنطاد في الأقصر</h2>
+        </div>
+        
+        <div class="ts-grid-2" style="margin-bottom: 60px;">
+          <!-- Article Cards -->
+          <div class="ts-info-card">
+            <div class="ts-card-img" style="background-image: url('hero.png'); border-radius: 16px; margin-bottom: 24px;"></div>
+            <h3 class="ts-info-card-title">دليلك لرحلة المنطاد: ماذا ترتدي؟</h3>
+            <p>يُنصح دائماً بارتداء ملابس مريحة وعملية، مع الأخذ في الاعتبار أن الجو قد يكون بارداً في الصباح الباكر خاصة في فصل الشتاء. الأحذية الرياضية هي الخيار الأمثل...</p>
+          </div>
+          <div class="ts-info-card">
+            <div class="ts-card-img" style="background-image: url('hero.png'); border-radius: 16px; margin-bottom: 24px;"></div>
+            <h3 class="ts-info-card-title">أفضل وقت للطيران في الأقصر</h3>
+            <p>يعتبر وقت شروق الشمس هو الوقت المثالي والأكثر استقراراً للطيران بالمنطاد. حيث تكون الرياح هادئة والأجواء مناسبة جداً لالتقاط أروع الصور التذكارية...</p>
+          </div>
+        </div>
+
+        <div class="ts-section-header">
+          <h2 class="ts-section-title">الأسئلة الشائعة</h2>
+        </div>
+        <div class="ts-grid-2">
+          <div class="ts-faq-col">
+            <details class="ts-faq-item">
+              <summary>متى يتم تأكيد الرحلة؟</summary>
+              <p>يتم تأكيد الرحلة قبل موعدها بيوم واحد بناءً على تقارير الأرصاد الجوية وتصريحات الطيران المدني.</p>
+            </details>
+            <details class="ts-faq-item">
+              <summary>هل الطيران آمن للأطفال؟</summary>
+              <p>نعم، ولكن يُشترط أن يكون عمر الطفل فوق 6 سنوات وأطول من 120 سم ليتمكن من رؤية المشهد من فوق حافة السلة.</p>
+            </details>
+            <details class="ts-faq-item">
+              <summary>ماذا يحدث إذا تم إلغاء الرحلة بسبب الطقس؟</summary>
+              <p>في حالة إلغاء الرحلة لظروف الطقس أو تعليمات الطيران المدني، يتم استرداد المبلغ بالكامل أو تأجيل الرحلة ليوم آخر حسب رغبتك.</p>
+            </details>
+          </div>
+          <div class="ts-faq-col">
+            <details class="ts-faq-item">
+              <summary>هل يوجد وزن محدد للركاب؟</summary>
+              <p>نعم، نرجو إبلاغنا مسبقاً إذا كان وزن الراكب يتجاوز 100 كيلوجرام لترتيب توزيع الأوزان داخل السلة بأمان.</p>
+            </details>
+            <details class="ts-faq-item">
+              <summary>كم تستغرق الرحلة بالكامل؟</summary>
+              <p>الرحلة في الجو تستغرق من 45 إلى 60 دقيقة، ولكن التجربة كاملة منذ الخروج من الفندق وحتى العودة تستغرق حوالي 3 ساعات.</p>
+            </details>
+            <details class="ts-faq-item">
+              <summary>هل مسموح بالتصوير؟</summary>
+              <p>بالتأكيد! ننصح بإحضار كاميراتكم وهواتفكم لالتقاط أروع الصور، ولكن يمنع استخدام طائرات الدرون بدون تصريح أمني.</p>
+            </details>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="ts-footer">
+    <div class="ts-container">
+      <div class="ts-footer-grid">
+        <div class="ts-footer-brand">
+          <div class="ts-logo">
+            <span class="ts-logo-top">balloon</span>
+            <span class="ts-logo-bottom">luxor</span>
+          </div>
+          <p>أكبر منصة لحجز رحلات المنطاد في الأقصر. استكشف تاريخ الفراعنة من الجو واستمتع بتجربة طيران آمنة وذكريات لا تُنسى.</p>
+        </div>
+        <div>
+          <h4>روابط هامة</h4>
+          <div class="ts-footer-links">
+            <a href="#">من نحن</a>
+            <a href="#">الرحلات والأسعار</a>
+            <a href="#">الشروط والأحكام</a>
+            <a href="#">سياسة الخصوصية</a>
+          </div>
+        </div>
+        <div>
+          <h4>الخدمات</h4>
+          <div class="ts-footer-links">
+            <a href="#">حجز المجموعات</a>
+            <a href="#">الرحلات الخاصة</a>
+            <a href="#">شهادات الهدايا</a>
+          </div>
+        </div>
+        <div>
+          <h4>المساعدة والتواصل</h4>
+          <div class="ts-footer-links">
+            <a href="#">الأسئلة الشائعة</a>
+            <a href="#">تواصل معنا</a>
+            <a href="#">📞 +20 100 000 0000</a>
+            <a href="#">📧 info@luxorballoon.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="ts-footer-bottom">
+        © 2026 Balloon Luxor Hub. جميع الحقوق محفوظة.
+      </div>
+    </div>
+  </footer>
+  <!-- Sidebar -->
+  <div id="ts-sidebar-backdrop" class="ts-sidebar-backdrop" onclick="document.getElementById('ts-sidebar-backdrop').classList.remove('open'); document.getElementById('ts-sidebar').classList.remove('open');"></div>
+  <aside id="ts-sidebar" class="ts-sidebar">
+    <div class="ts-sidebar-header">
+      <button class="ts-sidebar-close" onclick="document.getElementById('ts-sidebar-backdrop').classList.remove('open'); document.getElementById('ts-sidebar').classList.remove('open');">✕</button>
+    </div>
+    <div class="ts-sidebar-content">
+      <div class="ts-sidebar-booking">
+        <h3>My Booking</h3>
+        <p>View booking details, request flight date change, or cancel your booking with ease through My Booking.</p>
+        <a href="#" class="ts-btn-primary" style="display: block; text-align: center;">My Booking</a>
+      </div>
+
+      <div class="ts-sidebar-accordion-group">
+        <details class="ts-sidebar-dropdown">
+          <summary>Company</summary>
+          <div class="ts-sidebar-links-col">
+            <a href="#">About Us</a>
+            <a href="#">Our People</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </details>
+
+        <details class="ts-sidebar-dropdown">
+          <summary>MORE</summary>
+          <div class="ts-sidebar-links-col">
+            <a href="#">Blogs</a>
+            <a href="#">Operators</a>
+            <a href="#">Balloonscanner Guarantee</a>
+          </div>
+        </details>
+
+        <details class="ts-sidebar-dropdown">
+          <summary>LEGAL</summary>
+          <div class="ts-sidebar-links-col">
+            <a href="#">Privacy Rules</a>
+            <a href="#">Terms and Conditions</a>
+          </div>
+        </details>
+
+        <div class="ts-sidebar-links-col" style="padding-top: 16px; border-top: 1px solid #f1f5f9;">
+          <a href="#">Our Partners</a>
+          <a href="#">Flight Zones</a>
+          <a href="#">BALLOONSCANNER B2B</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+</body>
+</html>

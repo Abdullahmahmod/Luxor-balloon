@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة التحكم - Luxor Balloon Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell dashboard-page">
+    <div class="dashboard-layout">
+      
+      <!-- Sidebar -->
+      <aside class="dashboard-sidebar">
+        <div class="dashboard-sidebar-header">
+          <span class="showcase-brand showcase-wordmark">
+            <span class="showcase-wordmark-top">balloon</span>
+            <span class="showcase-wordmark-bottom">luxor</span>
+          </span>
+        </div>
+        
+        <nav class="dashboard-nav">
+          <a href="#" class="active">الرئيسية</a>
+          <a href="#">الرحلات</a>
+          <a href="#">الحجوزات</a>
+          <a href="#">الإعدادات</a>
+        </nav>
+        
+        <div class="dashboard-user">
+          <p>مرحباً، أحمد</p>
+          <a href="index.html" class="button secondary">تسجيل الخروج</a>
+        </div>
+      </aside>
+      
+      <!-- Main Content -->
+      <main class="dashboard-main">
+        <header class="dashboard-header">
+          <h1>لوحة التحكم</h1>
+          <a href="programs.html" class="button primary">استكشاف الرحلات</a>
+        </header>
+        
+        <section class="dashboard-stats-grid">
+          <article class="dashboard-card">
+            <span class="dashboard-stat-label">الحجوزات النشطة</span>
+            <strong class="dashboard-stat-value">3</strong>
+          </article>
+          <article class="dashboard-card">
+            <span class="dashboard-stat-label">إجمالي المدفوعات</span>
+            <strong class="dashboard-stat-value">$340</strong>
+          </article>
+          <article class="dashboard-card">
+            <span class="dashboard-stat-label">الرحلات المكتملة</span>
+            <strong class="dashboard-stat-value">12</strong>
+          </article>
+        </section>
+        
+        <section class="dashboard-content-section">
+          <h2>آخر الحجوزات</h2>
+          <div class="dashboard-card dashboard-surface">
+            <table class="dashboard-table">
+              <thead>
+                <tr>
+                  <th>رقم الحجز</th>
+                  <th>الرحلة</th>
+                  <th>التاريخ</th>
+                  <th>الحالة</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1001</td>
+                  <td>رحلة المنطاد الكلاسيكية (شروق)</td>
+                  <td>12 مايو 2026</td>
+                  <td><span class="status-badge success">مؤكد</span></td>
+                </tr>
+                <tr>
+                  <td>#1002</td>
+                  <td>رحلة منطاد VIP (خاصة)</td>
+                  <td>15 مايو 2026</td>
+                  <td><span class="status-badge pending">قيد الانتظار</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        
+      </main>
+    </div>
+  </div>
+</body>
+</html>
